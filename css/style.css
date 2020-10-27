@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo */
+
+.logo {
+    height: 2rem;
+    margin-left: 2rem;
+}
+
+/* Naviation */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.user-nav,
+.user-nav__section {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+}
+
+.user-nav__item,
+.user-nav__signUp {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+}
