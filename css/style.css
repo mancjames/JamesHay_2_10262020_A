@@ -5,11 +5,14 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 3rem;
+}
+
 /* Logo */
 
 .logo {
     height: 2rem;
-    margin-left: 2rem;
 }
 
 /* Naviation */
@@ -18,7 +21,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
 }
 
 .user-nav,
@@ -31,6 +33,27 @@
 
 .user-nav__item,
 .user-nav__signUp {
-    padding: 1.5rem 2rem;
+    padding: 2rem 2rem;
     cursor: pointer;
+}
+
+.user-nav__item {
+    border-top: 2px solid transparent;
+}
+
+.user-nav__item:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+.user-nav__signUp-name{
+    font-weight: bold;
+    color: #0065FC;
+}
+
+/*introduction & search*/
+
+.intro-header,
+.intro-paragraph {
+    margin: .5rem 0;
 }
