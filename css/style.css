@@ -53,7 +53,47 @@ body {
 
 /*introduction & search*/
 
-.intro-header,
-.intro-paragraph {
+.intro__header,
+.intro__paragraph {
     margin: .5rem 0;
+}
+
+.search {
+    margin: 1rem 0;
+    width: 30rem;
+    display: flex;
+}
+
+.fa-map-marker-alt,
+.search__input,
+.search__button {
+    padding: .75rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1px solid #F2F2f2;
+}
+
+.fa-map-marker-alt{
+    background-color: #F2F2f2;
+    border-radius: 15px 0 0 15px;
+    width: 3rem;
+}
+
+.search__input {
+    width: 17rem;
+    color: black;
+}
+
+.search__input::placeholder {
+    color: black;
+}
+
+.search__input:focus {
+    outline: none;
+}
+
+.search__button {
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: white;
 }
