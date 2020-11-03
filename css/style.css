@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    font-size: 14px;
 }
 
 body {
@@ -97,3 +98,69 @@ body {
     background-color: #0065FC;
     color: white;
 }
+
+/*Filters*/
+
+.filters{
+    display: flex;
+    margin: 1rem 0rem;
+    align-items: center;
+}
+
+.filter__title {
+    padding: 0rem 2rem 0rem 0rem;
+}
+
+.filter__options{
+    font-weight: bold;
+    display: flex;
+}
+
+.filter__choice{
+    display: flex;
+    border: 2px solid #F2F2f2;
+    border-radius: 30px;
+    margin: 1rem 1.5rem;
+}
+
+.filter__icon {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 1.2rem;
+    border-radius: 100%;
+    margin: -.1rem;
+    justify-content: center;
+    align-self: center;
+}
+
+.filter__name {
+  align-self: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+}
+
+/*Information*/
+
+.information__container {
+    display: flex;
+    width: 28%;
+}
+
+.information__icon {
+    background-color: white;
+    color: #0065FC;
+    padding: .3rem .6rem;
+    border-radius: 100%;
+    border: 1px solid #f2f2f2;
+    margin: 0rem 1rem;
+    align-self: flex-start;
+}
+
+.information__paragraph {
+    display: flex;
+
+}
+
+
+
+/*Accomodations*/
