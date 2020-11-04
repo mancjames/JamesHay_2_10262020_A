@@ -185,7 +185,8 @@ body {
     background-color: #F2F2f2;
     padding: 2.5rem 2rem;
     margin: 1rem;
-    width: 55rem;
+    width: 65%;
+    max-width: 1000px;
     height: auto;
     border-radius: 20px;
 }
@@ -213,6 +214,15 @@ body {
     border-radius: 20px;
     box-shadow:  0 3px 10px 0px rgba(0, 0, 0, 0.18);
     overflow: hidden;
+    position: relative;
+}
+
+.accommodation__card-link{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .accommodation__content {
