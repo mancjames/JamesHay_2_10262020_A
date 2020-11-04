@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 body {
@@ -176,9 +176,79 @@ body {
 
 .information__paragraph {
     display: flex;
-
 }
 
 
+/*Accommodations*/
 
-/*Accomodations*/
+.accommodation__container {
+    background-color: #F2F2f2;
+    padding: 2.5rem 2rem;
+    margin: 1rem;
+    width: 60rem;
+    height: 50rem;
+    border-radius: 20px;
+}
+
+.accommodation__title {
+    display: block;
+    font-size: 1.5em;
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.accommodation__cardcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}    
+
+.accommodation__card {
+    width: 16rem;
+    height: 12em;
+    background-color: white;
+    padding: .2rem;
+    border: 1px solid #f2f2f2;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    box-shadow:  0 3px 10px 0px rgba(0, 0, 0, 0.18);
+}
+
+.accommodation__content {
+    width: 100%;
+}
+
+.accommodation__image img{
+    width: 100%;
+    height: 6.5em;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.accommodation__hotelname,
+.accommodation__price {
+    margin: .2rem .4rem;
+}
+
+.accommodation__hotelname{
+    font-size: 1rem;
+}
+
+.accommodation__price {
+    font-size: .75rem;
+}
+
+.accommodation__rating {
+    margin: 0rem .4rem;
+}
+
+.fa-star {
+    font-size: .75rem;
+}
+
+.rating__star{
+    color: #f2f2f2;
+}
+
+.rating__star-active{
+    color: #0065FC;
+}
