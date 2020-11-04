@@ -10,6 +10,18 @@ body {
     margin: 0 3rem;
 }
 
+/* Reusable components */
+
+.card {
+    background-color: white;
+    padding: .2rem;
+    border: 1px solid #f2f2f2;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    box-shadow:  0 3px 10px 0px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+}
+
 /* Logo */
 
 .logo {
@@ -185,7 +197,7 @@ body {
     background-color: #F2F2f2;
     padding: 2.5rem 2rem;
     margin: 1rem;
-    width: 65%;
+    width: 63%;
     max-width: 1000px;
     height: auto;
     border-radius: 20px;
@@ -207,13 +219,6 @@ body {
 .accommodation__card {
     width: 15rem;
     height: 13em;
-    background-color: white;
-    padding: .2rem;
-    border: 1px solid #f2f2f2;
-    margin-bottom: 2rem;
-    border-radius: 20px;
-    box-shadow:  0 3px 10px 0px rgba(0, 0, 0, 0.18);
-    overflow: hidden;
     position: relative;
 }
 
