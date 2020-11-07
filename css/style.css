@@ -1,436 +1,557 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
-    margin: 0 3rem;
+  margin: 0 3rem;
 }
 
 /* Reusable components */
 
 .card {
-    background-color: white;
-    padding: .2rem;
-    border: 1px solid #f2f2f2;
-    margin-bottom: 2rem;
-    border-radius: 20px;
-    box-shadow:  0 3px 10px 0px rgba(0, 0, 0, 0.18);
-    overflow: hidden;
+  background-color: white;
+  padding: 0.2rem;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.18);
 }
 
 .container {
-    background-color: #F2F2f2;
-    padding: 2.5rem 2rem;
-    margin: 1rem;
-    max-width: 1000px;
-    height: auto;
-    border-radius: 20px;
+  background-color: #f2f2f2;
+  padding: 2.5rem 2rem;
+  margin: 1rem;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.title {
+  display: block;
+  font-size: 1.5em;
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.flex__containers {
+  display: flex;
+}
+
+.card-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
 }
 
 /* Logo */
 
 .logo {
-    height: 2rem;
+  height: 2rem;
 }
 
 /* Naviation */
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .user-nav,
 .user-nav__section {
-    display: flex;
-    align-items: center;
-    align-self: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  height: 100%;
 }
 
 .user-nav__item,
 .user-nav__signUp {
-    padding: 2rem 2rem;
-    cursor: pointer;
+  padding: 2rem 2rem;
+  cursor: pointer;
 }
 
 .user-nav__item {
-    border-top: 2px solid transparent;
+  border-top: 2px solid transparent;
 }
 
 .user-nav__item:hover {
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
 }
 
-.user-nav__signUp-name{
-    font-weight: bold;
-    color: #0065FC;
+.user-nav__signUp-name {
+  font-weight: bold;
+  color: #0065fc;
 }
 
 /*introduction & search*/
 
 .intro__header,
 .intro__paragraph {
-    margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .search {
-    margin: 1rem 0;
-    width: 30rem;
-    display: flex;
+  margin: 1rem 0;
+  width: 30rem;
+  display: flex;
 }
 
 .fa-map-marker-alt,
 .search__input,
 .search__button {
-    padding: .75rem 1rem;
-    font-weight: 700;
-    font-size: 1rem;
-    border: 1px solid #F2F2f2;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1px solid #f2f2f2;
 }
 
-.fa-map-marker-alt{
-    background-color: #F2F2f2;
-    border-radius: 15px 0 0 15px;
-    width: 3rem;
+.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
+  width: 3rem;
 }
 
 .search__input {
-    width: 17rem;
-    color: black;
+  width: 17rem;
+  color: black;
 }
 
 .search__input::placeholder {
-    color: black;
+  color: black;
 }
 
 .search__input:focus {
-    outline: none;
+  outline: none;
 }
 
 .search__button {
-    border-radius: 0px 15px 15px 0px;
-    background-color: #0065FC;
-    color: white;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #0065fc;
+  color: white;
 }
 
 /*Filters*/
 
-.filters{
-    display: flex;
-    margin: 1rem 0rem;
-    align-items: center;
+.filters {
+  display: flex;
+  margin: 1rem 0rem;
+  align-items: center;
 }
 
 .filter__title {
-    padding: 0rem 2rem 0rem 0rem;
+  padding: 0rem 2rem 0rem 0rem;
 }
 
-.filter__options{
-    font-weight: bold;
-    display: flex;
+.filter__options {
+  font-weight: bold;
+  display: flex;
 }
 
-.filter__choice{
-    display: flex;
-    border: 2px solid #F2F2f2;
-    border-radius: 30px;
-    margin: 1rem;
-    cursor: pointer;
-    transition: .2s;
+.filter__choice {
+  display: flex;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+  margin: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-.filter__choice:hover{
-    background-color: #0065FC;
-    color: white;
-    transition: .5s;
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(black,.2)
+.filter__choice:hover {
+  background-color: #0065fc;
+  color: white;
+  transition: 0.5s;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(black, 0.2);
 }
-
 
 .filter__choice:active,
 .filter__choice:focus {
-        outline: none;
-        transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba(black,.2);
-    }
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+}
 
 .filter__icon {
-    background-color: #DEEBFF;
-    color: #0065FC;
-    padding: 1.2rem;
-    border-radius: 100%;
-    margin: -.1rem;
-    justify-content: center;
-    align-self: center;
+  background-color: #deebff;
+  color: #0065fc;
+  padding: 1.2rem;
+  border-radius: 100%;
+  margin: -0.1rem;
+  justify-content: center;
+  align-self: center;
 }
 
 .filter__name {
-    align-self: center;
-    justify-content: center;
-    margin: 1rem 1rem;
+  align-self: center;
+  justify-content: center;
+  margin: 1rem 1rem;
 }
 
 /*Information*/
 
 .information__container {
-    display: flex;
-    width: 28%;
+  display: flex;
+  width: 28%;
 }
 
 .information__icon {
-    background-color: white;
-    color: #0065FC;
-    padding: .3rem .6rem;
-    border-radius: 100%;
-    border: 1px solid #f2f2f2;
-    margin: 0rem 1rem;
-    align-self: flex-start;
+  background-color: white;
+  color: #0065fc;
+  padding: 0.3rem 0.6rem;
+  border-radius: 100%;
+  border: 1px solid #f2f2f2;
+  margin: 0rem 1rem;
+  align-self: flex-start;
 }
 
 .information__paragraph {
-    display: flex;
+  display: flex;
 }
-
 
 /*Accommodations*/
 
 .accommodation__container {
-    width: 63%;
+  width: 63%;
 }
 
-.accommodation__title {
-    display: block;
-    font-size: 1.5em;
-    margin: 0rem 0rem 1.5rem 0rem;
+.accommodation__cardcontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.accommodation__cardcontainer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}    
 
 .accommodation__card {
-    width: 15rem;
-    height: 13em;
-    position: relative;
-}
-
-.accommodation__card-link{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    cursor: pointer;
+  width: 15rem;
+  height: 13em;
+  position: relative;
 }
 
 .accommodation__content {
-    width: 100%;
+  width: 100%;
 }
 
 .accommodation__image-1 {
-    height: 7.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  height: 7.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 
 @media only screen and (min-width: 768px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
-    }
+  .accommodation__image-1 {
+    background-image: url("../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 992px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
-    }
+  .accommodation__image-1 {
+    background-image: url("../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
-    }
+  .accommodation__image-1 {
+    background-image: url("../images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  }
 }
 
 .accommodation__image-2 {
-    height: 7.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  height: 7.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 
 @media only screen and (min-width: 768px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
-    }
+  .accommodation__image-2 {
+    background-image: url("../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 992px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
-    }
+  .accommodation__image-2 {
+    background-image: url("../images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
-    }
+  .accommodation__image-2 {
+    background-image: url("../images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  }
 }
 
 .accommodation__image-3 {
-    height: 7.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  height: 7.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 
 @media only screen and (min-width: 768px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg")
-    }
+  .accommodation__image-3 {
+    background-image: url("../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 992px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg")
-    }
+  .accommodation__image-3 {
+    background-image: url("../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg")
-    }
+  .accommodation__image-3 {
+    background-image: url("../images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  }
 }
 
 .accommodation__image-4 {
-    height: 7.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  height: 7.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 
 @media only screen and (min-width: 768px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg")
-    }
+  .accommodation__image-4 {
+    background-image: url("../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 992px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg")
-    }
+  .accommodation__image-4 {
+    background-image: url("../images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg")
-    }
+  .accommodation__image-4 {
+    background-image: url("../images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  }
 }
 
 .accommodation__image-5 {
-    height: 7.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  height: 7.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 
 @media only screen and (min-width: 768px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
-    }
+  .accommodation__image-5 {
+    background-image: url("../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 992px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
-    }
+  .accommodation__image-5 {
+    background-image: url("../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
-    }
+  .accommodation__image-5 {
+    background-image: url("../images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  }
 }
 
 .accommodation__image-6 {
-    height: 7.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
-    background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  height: 7.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 
 @media only screen and (min-width: 768px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg")
-    }
+  .accommodation__image-6 {
+    background-image: url("../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 992px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg")
-    }
+  .accommodation__image-6 {
+    background-image: url("../images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .accommodation__imagetest {
-        background-image: url("../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg")
-    }
+  .accommodation__image-6 {
+    background-image: url("../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  }
 }
 
-
-.accommodation__information{
-    background-color: white;
+.accommodation__information {
+  background-color: white;
 }
 
 .accommodation__hotelname,
 .accommodation__price,
 .accommodation__rating {
-    margin: .2rem 1rem;
+  margin: 0.2rem 1rem;
 }
 
-.accommodation__hotelname{
-    font-size: 1rem;
+.accommodation__hotelname {
+  font-size: 1rem;
 }
 
 .accommodation__price {
-    font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .fa-star {
-    font-size: .75rem;
+  font-size: 0.75rem;
 }
 
-.rating__star{
-    color: #f2f2f2;
+.rating__star {
+  color: #f2f2f2;
 }
 
-.rating__star-active{
-    color: #0065FC;
+.rating__star-active {
+  color: #0065fc;
 }
 
 .accommodation__expand {
-    font-size: 1.2rem;
-    margin: 1rem 0rem;
+  font-size: 1.2rem;
+  margin: 1rem 0rem;
+}
+
+/*most popular*/
+
+.popular__container {
+  width: 30%;
+  padding: 2.5rem 2.5rem 0rem 2rem;
+}
+
+.popular__card {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+}
+
+.popular__content {
+  display: flex;
+  align-items: center;
+}
+
+.popular__image {
+  height: 9.5rem;
+  width: 40%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.popular__image-1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+  .popular__image-1 {
+    background-image: url("../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .popular__image-1 {
+    background-image: url("../images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .popular__image-1 {
+    background-image: url("../images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  }
+}
+
+.popular__image-2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+  .popular__image-2 {
+    background-image: url("../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .popular__image-2 {
+    background-image: url("../images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .popular__image-2 {
+    background-image: url("../images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  }
+}
+
+.popular__image-3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+  .popular__image-3 {
+    background-image: url("../images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .popular__image-3 {
+    background-image: url("../images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .popular__image-3 {
+    background-image: url("../images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  }
+}
+
+.popular__hotelname,
+.popular__price,
+.popular__rating {
+  margin: 0.2rem 1rem;
+}
+
+.popular__hotelname {
+  font-size: 1rem;
+}
+
+.popular__price {
+  font-size: 0.9rem;
+}
+
+.popular__hotelinformation {
+  height: 9rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
