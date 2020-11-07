@@ -22,6 +22,15 @@ body {
     overflow: hidden;
 }
 
+.container {
+    background-color: #F2F2f2;
+    padding: 2.5rem 2rem;
+    margin: 1rem;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 20px;
+}
+
 /* Logo */
 
 .logo {
@@ -194,13 +203,7 @@ body {
 /*Accommodations*/
 
 .accommodation__container {
-    background-color: #F2F2f2;
-    padding: 2.5rem 2rem;
-    margin: 1rem;
     width: 63%;
-    max-width: 1000px;
-    height: auto;
-    border-radius: 20px;
 }
 
 .accommodation__title {
@@ -211,7 +214,7 @@ body {
 
 .accommodation__cardcontainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }    
@@ -234,11 +237,168 @@ body {
     width: 100%;
 }
 
-.accommodation__image img{
+.accommodation__image-1 {
     height: 7.5rem;
-    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20px 20px 0px 0px;
+    background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
+
+@media only screen and (min-width: 768px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg")
+    }
+}
+
+.accommodation__image-2 {
+    height: 7.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg")
+    }
+}
+
+.accommodation__image-3 {
+    height: 7.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg")
+    }
+}
+
+.accommodation__image-4 {
+    height: 7.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg")
+    }
+}
+
+.accommodation__image-5 {
+    height: 7.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg")
+    }
+}
+
+.accommodation__image-6 {
+    height: 7.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg")
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .accommodation__imagetest {
+        background-image: url("../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg")
+    }
+}
+
 
 .accommodation__information{
     background-color: white;
