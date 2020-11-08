@@ -56,6 +56,19 @@ a:active {
   cursor: pointer;
 }
 
+.btn-animation:hover {
+    transition: 0.5s;
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+  }
+  
+.btn-animation:active,
+.btn-animation:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+  }
+
 /* Logo */
 
 .logo {
@@ -174,16 +187,6 @@ a:active {
 .filter__choice:hover {
   background-color: #0065fc;
   color: white;
-  transition: 0.5s;
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(black, 0.2);
-}
-
-.filter__choice:active,
-.filter__choice:focus {
-  outline: none;
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
 }
 
 .filter__icon {
@@ -447,8 +450,18 @@ a:active {
 
 /*most popular*/
 
+.popular__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.fa-chart-line {
+    font-size: 1.5rem;
+}
+
 .popular__container {
-  width: 30%;
+  width: 31%;
   padding: 2.5rem 2.5rem 0rem 2rem;
 }
 
