@@ -12,6 +12,14 @@ body {
 
 /* Reusable components */
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
 .card {
   background-color: white;
   padding: 0.2rem;
