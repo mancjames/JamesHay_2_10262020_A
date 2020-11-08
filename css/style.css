@@ -560,6 +560,10 @@ body {
 
 /* Activities */
 
+.activities {
+    margin-bottom: 2rem;
+}
+
 .activities__header {
   margin-top: 2rem;
 }
@@ -800,4 +804,33 @@ body {
 
 .activities__name {
   margin: 1rem;
+}
+
+/*Footer*/
+
+.footer {
+    margin: 0rem -3rem;
+    padding: 2rem 5rem;
+    background-color: #f2f2f2;
+}
+
+.footer__content{
+    display: flex;
+}
+
+.footer__section {
+    width: 34%;
+}
+
+.footer__title {
+    letter-spacing: .1rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.footer__list{
+    list-style-type: none;
+}
+
+.footer__list li {
+    margin: 1rem 0rem;
 }
