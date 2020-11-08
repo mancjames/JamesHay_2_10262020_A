@@ -219,8 +219,8 @@ body {
 /*Accommodations*/
 
 .accommodation__container {
-  width: 63%;
-  margin: 1rem 1rem 1rem 0rem;
+  width: 65%;
+  margin: 1rem 1.5rem 1rem 0rem;
 }
 
 .accommodation__cardcontainer {
@@ -566,12 +566,12 @@ body {
 
 .activities__cardcontainer-1{
     width: 50%;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .activities__cardcontainer-2{
     width: 50%;
-    margin-left: 1rem;
+    margin: 0rem 1rem;
 }
 
 .activities__card {
