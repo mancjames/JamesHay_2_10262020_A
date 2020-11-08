@@ -16,8 +16,8 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .card {
@@ -57,17 +57,17 @@ a:active {
 }
 
 .btn-animation:hover {
-    transition: 0.5s;
-    transform: translateY(-4px);
-    box-shadow: 0 1rem 2rem rgba(black, 0.2);
-  }
-  
+  transition: 0.5s;
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(black, 0.2);
+}
+
 .btn-animation:active,
 .btn-animation:focus {
-    outline: none;
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
-  }
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+}
 
 /* Logo */
 
@@ -451,13 +451,13 @@ a:active {
 /*most popular*/
 
 .popular__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .fa-chart-line {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .popular__container {
@@ -582,7 +582,7 @@ a:active {
 /* Activities */
 
 .activities {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .activities__header {
@@ -830,28 +830,28 @@ a:active {
 /*Footer*/
 
 .footer {
-    margin: 0rem -3rem;
-    padding: 2rem 5rem;
-    background-color: #f2f2f2;
+  margin: 0rem -3rem;
+  padding: 2rem 5rem;
+  background-color: #f2f2f2;
 }
 
-.footer__content{
-    display: flex;
+.footer__content {
+  display: flex;
 }
 
 .footer__section {
-    width: 34%;
+  width: 34%;
 }
 
 .footer__title {
-    letter-spacing: .1rem;
-    margin: 0rem 0rem 1.5rem 0rem;
+  letter-spacing: 0.1rem;
+  margin: 0rem 0rem 1.5rem 0rem;
 }
 
-.footer__list{
-    list-style-type: none;
+.footer__list {
+  list-style-type: none;
 }
 
 .footer__list li {
-    margin: 1rem 0rem;
+  margin: 1rem 0rem;
 }
