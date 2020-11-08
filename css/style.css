@@ -555,3 +555,76 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+
+/* Activities */
+
+.activities__cardcontainer{
+    min-height: 30rem;
+    width: 50%;
+}
+
+.activities__card {
+    position: relative;
+    margin-bottom: 0rem;
+}
+
+.activities__grid-1 {
+    width: 100%;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template: repeat(3, 2fr) / repeat(6, 1fr);
+    align-items: stretch;
+}
+
+.grid__row-large {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.grid__row-medium {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid__row-small {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+
+.activities__image {
+    max-width: 100%;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+.activities__image-1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .activites__image-1 {
+      background-image: url("../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .activities__image-1 {
+      background-image: url("../images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .activities__image-1 {
+      background-image: url("../images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    }
+  }
