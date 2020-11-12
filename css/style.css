@@ -38,6 +38,12 @@ a:active {
   border-radius: 20px;
 }
 
+@media only screen and (max-width:1024px){
+    .container {
+        margin: 2rem 0rem;
+    }
+}
+
 .title {
   display: block;
   font-size: 1.5em;
@@ -46,6 +52,12 @@ a:active {
 
 .flex__containers {
   display: flex;
+}
+
+@media only screen and (max-width:1024px) {
+    .flex__containers {
+        flex-wrap: wrap;
+    }
 }
 
 .card-link {
@@ -123,6 +135,15 @@ a:active {
   width: 30rem;
   display: flex;
 }
+@media only screen and (max-width:1024px) {
+    .search {
+        margin: 1.5rem 0rem;
+    }
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
 
 .fa-map-marker-alt,
 .search__input,
@@ -166,14 +187,29 @@ a:active {
   align-items: center;
 }
 
+@media only screen and (max-width:768px) {
+    .filter__title {
+        align-self: flex-start;
+    }
+}
+
 .filter__title {
   padding: 0rem 2rem 0rem 0rem;
 }
 
+@media only screen and (max-width:768px) {
+    .filter__title {
+      padding: 0rem;
+    }
+}
+
+
 .filter__options {
   font-weight: bold;
   display: flex;
+  flex-wrap: wrap;
 }
+
 
 .filter__choice {
   display: inline-block;
@@ -214,6 +250,12 @@ a:active {
   margin: 0rem;
 }
 
+@media only screen and (max-width:1024px) {
+    .information__container {
+        margin: 1.5rem 0rem;
+    }
+}
+
 .information__icon {
   background-color: white;
   color: #0065fc;
@@ -235,6 +277,13 @@ a:active {
   margin: 1rem 1.5rem 1rem 0rem;
 }
 
+@media only screen and (max-width:1024px) {
+    .accommodation__container {
+        width: 100%;
+        margin: 0rem;
+    }
+}
+
 .accommodation__cardcontainer {
   display: flex;
   justify-content: space-around;
@@ -246,6 +295,7 @@ a:active {
   width: 15rem;
   height: 13em;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .accommodation__content {
@@ -466,10 +516,33 @@ a:active {
   padding: 2.5rem 2.5rem 0rem 2rem;
 }
 
+@media only screen and (max-width:1024px){
+
+    .popular__container {
+        width: 100%;
+        padding: 2.5rem;
+    }
+
+    .popular__cardcontainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+
 .popular__card {
   width: 100%;
   height: 10rem;
   position: relative;
+}
+
+@media only screen and (max-width:1024px){
+    .popular__card {
+        width: 30%;
+        margin: 1rem 0rem;
+    }
 }
 
 .popular__content {
@@ -481,6 +554,13 @@ a:active {
   height: 9.5rem;
   width: 40%;
   border-radius: 20px 0px 0px 20px;
+  align-self: center;
+}
+
+@media only screen and (max-width:1024px){
+    .popular__image {
+        width: 45%;
+    }
 }
 
 .popular__image-1 {
