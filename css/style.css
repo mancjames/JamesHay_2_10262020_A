@@ -176,10 +176,13 @@ a:active {
 }
 
 .filter__choice {
-  display: flex;
+  display: inline-block;
+  height: 3.2rem;
+  line-height: 3rem;
   border: 2px solid #f2f2f2;
   border-radius: 30px;
   margin: 1rem;
+  padding: 0rem 1.5rem 0rem 0rem;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -190,19 +193,17 @@ a:active {
 }
 
 .filter__icon {
+  float: left;
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
   background-color: #deebff;
   color: #0065fc;
   padding: 1.2rem;
-  border-radius: 100%;
-  margin: -0.1rem;
-  justify-content: center;
-  align-self: center;
-}
-
-.filter__name {
-  align-self: center;
-  justify-content: center;
-  margin: 1rem 1rem;
+  border-radius: 50%;
+  margin: -.1rem .5rem 0 -0.1rem;
+  height: 3.1rem;
+  width: 3.1rem;
 }
 
 /*Information*/
