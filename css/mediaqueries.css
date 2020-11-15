@@ -1,0 +1,160 @@
+/* For ipad pro-desktop */
+
+@media only screen and (max-width:1024px){       
+
+    /* Reusable components */
+
+    .container {
+        margin: 2rem 0rem;
+    }
+
+    .flex__containers {
+        flex-wrap: wrap;
+    }
+
+    /* Introduction */
+
+    .search {
+        margin: 1.5rem 0rem;
+    }
+
+    /* Filters */
+
+    /* Information */
+
+    .information__container {
+        margin: 1.5rem 0rem;
+    }
+
+    /* Accommodation */
+
+    .accommodation__container {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    /* Popular */
+
+    .popular__container {
+        width: 100%;
+        padding: 2.5rem;
+    }
+
+    .popular__cardcontainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .popular__card {
+        width: 30%;
+        margin: 1rem 0rem;
+    }
+
+    /* Activities */
+
+    .activities__header {
+        margin-top: 0rem;
+    }
+
+    .activities__cardcontainer-1 {
+        width: 48.5%;
+        margin-right: 1.5rem;
+    }
+
+    .activities__cardcontainer-2 {
+        width: 48.5%;
+        margin: 0rem;
+    }
+
+    .activities__grid {
+        grid-gap: 0.5rem 1.5rem;
+    }
+
+}
+
+/* ipad */
+
+@media only screen and (max-width: 768px) {
+
+    /* Reusable components */
+
+    .title {
+        display: block;
+        font-size: 1.5em;
+        margin: 0rem 0rem 1rem 0rem;
+      }
+
+    /* Introduction */
+
+    .search {
+        margin: 1rem 0rem;
+    }
+
+    /* Filters */
+
+    .filter__title {
+        align-self: flex-start;
+        padding: 0rem;
+        margin: .5rem 0rem;
+    }
+
+    .filter__choice {
+        margin: .5rem .5rem .5rem 0rem
+    }
+
+    /* Information */
+
+    .information__container {
+        width: 50%;
+        margin: 1rem 0rem;
+    }
+
+    /* Popular */
+
+    .popular__card {
+        width: 80%;
+        margin: 1rem 0rem;
+    }
+
+    .popular__hotelinformation {
+        left: 12rem;
+      }
+
+    /* Activities */
+
+    .activities__cardcontainer-1 {
+        width: 100%;
+        margin-right: 0;
+      }
+      
+    .activities__cardcontainer-2 {
+        width: 100%;
+        margin: 0;
+      }
+
+    .activities__grid {
+        grid-gap: 0.5rem 2rem;
+    }
+
+    /* footer */
+
+    .footer {
+        padding: 2rem;
+    }
+
+    .footer__section {
+        padding: 0rem 2rem;
+    }
+
+    .footer__title {
+        letter-spacing: 0;
+        margin: 0rem 0rem .5rem 0rem;
+    }
+
+    .footer__list {
+        width: 90%;
+    }
+
+}
