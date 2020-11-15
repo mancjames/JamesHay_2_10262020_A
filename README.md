@@ -1,5 +1,22 @@
 Project 2 for OpenClassrooms front end developer course.
 
-The aim of the project is to make a mock up using html/css based on a design brief from a fictional company.
+The aim of the project is to build a mock-up in pure css/html from a design brief and the following scenario:
+
+'Features
+
+Users will be able to search for accommodations in the city of their choice. Therefore, the search field is an input field, the text of which can be edited by the user. However, at this stage, the search button will not be functional.
+Each accommodation or activity card will have to be clickable in its entirety. For the moment, the links will be empty.
+The filters will not be functional for this version; however, they must change their appearance when hovered over. I leave it up to you to decide the most appropriate effect.
+In the menu, the Accommodations and Activities links are anchors that should lead to sections of the page.
+ 
+
+Technical constraints
+
+I’m providing you with two mock-ups: one desktop and one mobile. The site will also have to be adapted for tablets. You are free to make the necessary adaptations with the layout, as long as no elements are cut, and the text is a sufficient size. I’ll let you choose the appropriate breakpoints.
+As I didn't know which image sizes and formats you need, I exported a variety. I’ll let you choose the most suitable format concerning resolution and loading time.
+The icons come from the Font Awesome library. The colors of the chart are blue #0065FC and its lighter version #DEEBFF, as well as grey for the background #F2F2.
+The site font is Raleway.'
+
+Following mock-up was built with no frameworks and includes responsive design with the relevant breakpoints.
 
 Github page for viewing current project: https://mancjames.github.io/JamesHay_2_10262020_A/.
