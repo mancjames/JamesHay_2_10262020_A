@@ -6,10 +6,17 @@
 
     .container {
         margin: 2rem 0rem;
+        padding: 1.5rem;
     }
 
+    .title {
+        display: block;
+        font-size: 1.5em;
+        margin: 1rem 0rem;
+      }
+
     .flex__containers {
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
 
     /* Introduction */
@@ -37,7 +44,7 @@
 
     .popular__container {
         width: 100%;
-        padding: 2.5rem;
+        padding: 1.5rem;
     }
 
     .popular__cardcontainer {
@@ -55,7 +62,7 @@
     /* Activities */
 
     .activities__header {
-        margin-top: 0rem;
+        margin: 2rem 0rem;
     }
 
     .activities__cardcontainer-1 {
@@ -83,8 +90,12 @@
     .title {
         display: block;
         font-size: 1.5em;
-        margin: 0rem 0rem 1rem 0rem;
+        margin: 1rem 0rem;
       }
+
+    .container {
+        margin: 1rem 0rem;
+    }
 
     /* Introduction */
 
@@ -123,6 +134,10 @@
       }
 
     /* Activities */
+
+    .activities__header {
+        margin: 1rem 0rem;
+    }
 
     .activities__cardcontainer-1 {
         width: 100%;
