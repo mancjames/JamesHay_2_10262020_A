@@ -10,6 +10,14 @@ body {
   margin: 0rem 3rem;
 }
 
+.searchSection,
+.filters,
+.information,
+.accommodationandpopular,
+.activities {
+  max-width: 1800px;
+}
+
 /* Reusable components */
 
 a:link,
