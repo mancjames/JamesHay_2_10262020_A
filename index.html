@@ -15,19 +15,19 @@
 
 <body>
     <header class="header">
-        <img class="logo" src="images/logo/Reservia@3x.png" alt="logo">
-        <div class="user-nav__section">
+        <img class="logo topleft" src="images/logo/Reservia@3x.png" alt="logo">
+        <div class="user-nav__section bottom">
             <nav class="user-nav">
                 <div class="user-nav__item">
                     <a href="#accommodation"><span class="user-nav__name">Accomodations</span></a>
                 </div>
                 <div class="user-nav__item">
-                    <a href="#activities"><span class="user-nav__name">Activities</span></a>
+                    <a href="#activities"><span class="user-nav__name ">Activities</span></a>
                 </div>
             </nav>
-            <div class="user-nav__signUp">
-                <span class="user-nav__signUp-name">Sign Up</span>
-            </div>
+        </div>
+        <div class="user-nav__signUp topright">
+            <span class="user-nav__signUp-name ">Sign Up</span>
         </div>
     </header>
 
@@ -42,9 +42,12 @@
         <form action="#" class="search">
             <i class="fas fa-map-marker-alt"></i>
             <input type="text" class="search__input" placeholder="Marseille, France">
-            <button class="search__button">
+            <button class="search__button search__large">
                 Search
             </button>
+            <button class="search__button search__small">
+                <i class="fas fa-search"></i>
+            </button> 
         </form>
     </section>
 
