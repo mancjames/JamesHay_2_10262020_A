@@ -139,10 +139,6 @@ a:active {
   display: flex;
 }
 
-input:focus {
-    opacity: 0;
-}
-
 .fa-map-marker-alt,
 .search__input,
 .search__button {
